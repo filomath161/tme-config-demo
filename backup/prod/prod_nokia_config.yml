@@ -1,0 +1,16 @@
+apiVersion: platform.example.com/v1
+kind: ServiceIntegration
+metadata:
+  name: app-b-security
+  application: app-b
+  owner: team-app-b
+spec:
+  platformService:
+    name: security-service
+    version: v1
+  environment: test
+  configuration:
+    vulnerabilityScanning: true
+    policyEnforcement: strict
+  integration:
+    status: requested
