@@ -1,0 +1,17 @@
+
+apiVersion: platform.example.com/v1
+kind: ServiceIntegration
+metadata:
+  name: app-a-network
+  application: app-a
+  owner: team-app-a
+spec:
+  platformService:
+    name: network-service
+    version: v1
+  environment: dev
+  configuration:
+    subnetType: private
+    enableMonitoring: true
+  integration:
+    status: requested
