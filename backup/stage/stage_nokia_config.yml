@@ -1,0 +1,16 @@
+apiVersion: platform.example.com/v1
+kind: ServiceIntegration
+metadata:
+  name: app-a-monitoring
+  application: app-a
+  owner: team-app-a
+spec:
+  platformService:
+    name: monitoring-service
+    version: v1
+  environment: dev
+  configuration:
+    metricsEnabled: true
+    logLevel: info
+  integration:
+    status: requested
