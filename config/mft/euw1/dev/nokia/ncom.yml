@@ -1,0 +1,51 @@
+Here’s a simple YAML example showing different data types and structures you can use:
+Yaml# Sample YAML configuration
+
+app:
+  name: MyApplication
+  version: 1.0.0
+  environment: production
+
+database:
+  host: localhost
+  port: 5432
+  username: admin
+  password: secret123
+  options:
+    pool_size: 10
+    timeout: 30
+
+features:
+  - authentication
+  - logging
+  - caching
+
+logging:
+  level: info
+  file: /var/log/myapp.log
+
+servers:
+  - name: server1
+    ip: 192.168.1.10
+    roles:
+      - web
+      - api
+  - name: server2
+    ip: 192.168.1.11
+    roles:
+      - db
+
+# Boolean and null values
+maintenance_mode: false
+max_users: null
+
+Key Points:
+
+Indentation: YAML uses spaces (not tabs) for nesting.
+Scalars: Strings, numbers, booleans, and null values are supported.
+Lists: Use - for list items.
+Maps: Key-value pairs are written as key: value.
+Comments: Start with #.
+
+If you want, I can also give you a minimal YAML example for quick testing.
+Do you want me to prepare that?
