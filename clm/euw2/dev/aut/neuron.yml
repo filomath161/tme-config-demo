@@ -1,0 +1,13 @@
+# App configuration example
+app_name: Neuron
+version: 1.2
+debug: false
+
+server:
+  host: 127.0.0.1
+  port: 8080
+
+features:
+  - notifications
+  - dark_mode
+  - offline_sync
